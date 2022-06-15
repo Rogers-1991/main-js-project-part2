@@ -10,6 +10,7 @@ function operate() {
 
   let inputLen = 0;
   let initZero = true;
+  let currentNum = "";
 
   btnArray.map((button) => {
     button.addEventListener("click", (e) => {
@@ -21,7 +22,13 @@ function operate() {
           display.innerText = "0";
           inputLen = 0;
           initZero = true;
-          document.getElementById("dec").disabled = false;
+          break;
+        case ".":
+          if (!currentNum.includes(".")) {
+            display.innerText;
+            currentNum += ".";
+            display.innerText = currentNum;
+          }
           break;
         case "←":
           if (display.innerText) {
@@ -45,15 +52,13 @@ function operate() {
             display.innerText = inputLen;
             break;
           }
-        case ".":
-          if(display.innerText == '.')
-          document.getElementById("dec").disabled = true;
-          break;
         default:
           display.innerText += e.target.innerText;
           inputLen += 1;
           initZero = false;
-          document.getElementById("dec").disabled = false;
+          if(display.innerText=='.') {
+            display.innerText = '0.';
+          }
       }
     });
   });
