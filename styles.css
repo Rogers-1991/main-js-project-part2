@@ -32,18 +32,11 @@ body {
   align-items: flex-end;
   justify-content: space-around;
   flex-direction: column;
+  font-size: 1.8rem;
   padding: 10px;
   word-wrap: break-word;
   word-break: break-all;
   background-color: #b2b9b7;
-}
-#display .previous-operand {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 1.5rem;
-}
-#display .current-operand {
-  color: white;
-  font-size: 2.5rem;
 }
 
 /* BUTTON LAYOUT */
