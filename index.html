@@ -10,26 +10,29 @@
   <body>
     <main>
       <div class="container">
-        <div id="display">0</div>
-        <div class="button span-two" id="aC">AC</div>
-        <div class="button" id="plsMns">&larr;</div>
-        <div class="button" id="divD">/</div>
-        <div class="button" id="num">7</div>
-        <div class="button" id="num">8</div>
-        <div class="button" id="num">9</div>
-        <div class="button" id="mul">*</div>
-        <div class="button" id="num">4</div>
-        <div class="button" id="num">5</div>
-        <div class="button" id="num">6</div>
-        <div class="button" id="min">-</div>
-        <div class="button" id="num">1</div>
-        <div class="button" id="num">2</div>
-        <div class="button" id="num">3</div>
-        <div class="button" id="pls">+</div>
-        <div class="button" id="num">0</div>
-        <div class="button" id="dec">.</div>
-        <div id="equals" class="button span-two">=</div>
-      </div>
+        <div id="display">
+          <div class="prevOp" data-prevOp></div>
+          <div class="currentOp" data-currentOp></div>
+        </div>
+        <button class="button span-two" id="aC" data-ac>AC</button>
+        <button class="button" id="plsMns" data-del>&larr;</button>
+        <button class="button" id="divD"data-op>/</button>
+        <button class="button" id="num" data-num>7</button>
+        <button class="button" id="num" data-num>8</button>
+        <button class="button" id="num" data-num>9</button>
+        <button class="button" id="mul" data-op>*</button>
+        <button class="button" id="num" data-num>4</button>
+        <button class="button" id="num" data-num>5</button>
+        <button class="button" id="num" data-num>6</button>
+        <button class="button" id="min" data-op>-</button>
+        <button class="button" id="num" data-num>1</button>
+        <button class="button" id="num" data-num>2</button>
+        <button class="button" id="num" data-num>3</button>
+        <button class="button" id="pls" data-op>+</button>
+        <button class="button" id="dec" data-num>.</button>
+        <button class="button" id="num" data-num>0</button>
+        <button id="equals" class="button span-two" data-equals>=</div>
+      </button>
     </main>
   </body>
   <script src="script.js"></script>
